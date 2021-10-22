@@ -94,8 +94,8 @@ button:active {
 	margin: 10px 30px !important;
 }
 
-/*-------------------- Mobile screen -----------------*/
-@media screen and (max-width: 376px) {
+/*-------------------- <765px width/Mobile screen -----------------*/
+@media screen and (max-width: 765px) {
 	#calc-container {
 		width: 80%;
 	}
