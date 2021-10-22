@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: hsl(222, 26%, 31%);
+	font-family: "Spartan", sans-serif; 
+}
+
+#title-bar {
+	color: #fff;
+}
+
+#calc-container {
+	width: 50%;
+	margin: auto;
+}
+
+#result-container {
+	height: 150px;
+	margin: 10px auto;
+	border-radius: 10px;
+	background-color: hsl(224, 36%, 15%);
+	padding: 20px;
+	overflow: hidden;
+}
+
+#result {
+	float: right;
+    position: relative;
+    top: 40px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.clear-fix {
+	clear: both;
+	display: table;
+	content: '';
+}
+
+#input-button-container {
+	margin: 20px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: hsl(223, 31%, 20%);
+}
+
+#number-operator-buttons {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+#number-operator-buttons > button {	    
+	width: 20%;
+    margin: 15px 8px;
+    padding: 15px 10px 10px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    box-shadow: 0px 2px 1px hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+    font-family: "Spartan", sans-serif; 
+    cursor: pointer;
+}
+
+button:active {
+	transform: translateY(3px);
+	opacity: 0.8 !important;
+	box-shadow: 0px 0px 0px transparent !important;
+
+}
+
+#delete-button, #reset-button {
+	background-color: hsl(225, 21%, 49%) !important; 
+	color: #fff !important; 
+	box-shadow: 0px 2px 1px hsl(224, 28%, 35%) !important;
+}
+
+#equal-button {
+	background-color: hsl(6, 63%, 50%) !important; 
+	color: #fff !important;
+	box-shadow: 0px 2px 1px hsl(6, 70%, 34%) !important;	
+}
+
+#reset-button, #equal-button {
+	width: 40% !important;
+	margin: 10px 30px !important;
+}
+
+/*-------------------- Mobile screen -----------------*/
+@media screen and (max-width: 376px) {
+	#calc-container {
+		width: 80%;
+	}
+
+	#number-operator-buttons > button {
+		width: 15%;
+    	margin: 10px 9px;
+    	padding: 10px;
+    	border-radius: 5px;
+    	font-size: 0.5rem;
+    }
+
+    #reset-button, #equal-button {
+    	margin: 5px !important;
+    }
+
+    #result-container {
+    	height: 90px;
+    	padding: 10px;
+    }
+
+    #result {
+    	font-size: 1em;
+    	top: 30px;
+    }
+}
